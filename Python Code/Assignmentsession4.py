@@ -1,0 +1,10 @@
+list1=["a", "p", "q", "s", "e", "r", "f", "g", "h", "y", "t", "s", "x", "h", "e"]
+list1.sort()
+print(list1)
+a=list1.index("t")
+print (a)
+list1.reverse()
+print(list1)
+b=list1.index("t")
+print (b)
+print(list1[b+3])

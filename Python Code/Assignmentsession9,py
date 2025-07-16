@@ -1,0 +1,13 @@
+import random
+a=random.randint(1,6)
+if a == 6:
+    print("You won the dice game")
+else:
+    print("You did not win the dice game")
+list1=[100,200,300,400,500,600,700,800,900,1000,1100]
+total=0
+for f in list1:
+    if f==600 or f==700:
+        continue
+    total+=f
+print(total)
