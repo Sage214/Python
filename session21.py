@@ -37,6 +37,21 @@ b1.grid(row=2, column=1)
 
 #dropdown is a menubox, when we click on the arrows, a list opens
 r=["apple", "mango", "blueberry"]
-#
-b=OptionMenu(screen, )
+#we have created a list as a dropdown manuel list
+#add a tkinter variable there we can get the value
+p=StringVar()
+p.set("select a fruit")
+b=OptionMenu(screen, p, *r)
+b.grid(row=4, column=1)
+
+l1=Label(screen)
+l1.grid(row=1, column=0)
+
+def function():
+    l1.config(text=p.get())
+
+b1=Button(screen, text="click", font=("Verdana"), command=function)
+b1.grid(row=5, column=1)
+
+
 mainloop()
